@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".DashboardFragment"
     android:orientation="horizontal">
 
@@ -29,11 +30,12 @@
                 android:textSize="20sp"
                 android:layout_weight="0.3"/>
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="+"
-                android:layout_weight="1"/>
+                android:id="@+id/addreminder"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textSize="10sp"
+                android:background="@drawable/adds"
+                android:layout_margin="5dp"/>
         </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
@@ -45,9 +47,12 @@
                 android:orientation="vertical">
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/btnupdate"
+                    android:clickable="true"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    >
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -84,7 +89,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="10dp"
-                                android:text="Thursday"/>
+                                android:text="10:00 AM"/>
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -97,7 +102,8 @@
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/lightgray">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -197,6 +203,7 @@
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
+                    app:cardBackgroundColor="@color/lightgray"
                     android:layout_marginBottom="10dp">
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -234,7 +241,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="10dp"
-                                android:text="Thursday"/>
+                                android:text="10:00 AM"/>
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -297,6 +304,7 @@
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
+                    app:cardBackgroundColor="@color/lightgray"
                     android:layout_marginBottom="10dp">
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -434,6 +442,7 @@
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
+                    app:cardBackgroundColor="@color/lightgray"
                     android:layout_marginBottom="10dp">
                     <LinearLayout
                         android:layout_width="match_parent"

@@ -21,6 +21,7 @@
             android:textSize="20dp"
             android:layout_gravity="center"/>
         <Spinner
+            android:id="@+id/spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"></Spinner>
@@ -36,8 +37,10 @@
             android:layout_height="300dp"
             android:orientation="vertical"
             android:layout_gravity="center"
+            android:clickable="true"
             android:background="@drawable/attendancebtn">
             <TextView
+                android:id="@+id/studentid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1000123123"
@@ -45,6 +48,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/studentinitial"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CAMP"
@@ -54,6 +58,7 @@
                 android:layout_gravity="center"/>
 
             <TextView
+                android:id="@+id/studentname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CARL ALEXSON M. PATAN AO"
