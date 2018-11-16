@@ -39,7 +39,7 @@ import java.util.ArrayList;
 
 public class DashboardFragment extends Fragment {
 
-    String JSON_STRING;
+
     public DashboardFragment() {
         // Required empty public constructor
     }

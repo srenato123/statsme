@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity
                     case R.id.nav_dashboard:
                         getSupportFragmentManager().beginTransaction().replace(R.id.content, new DashboardFragment()).commit();
                         getSupportActionBar().setTitle("Dashboard");
+
+
+
                         return true;
                     case R.id.nav_attendance:
                         getSupportFragmentManager().beginTransaction().replace(R.id.content, new AttendanceFragment()).commit();
